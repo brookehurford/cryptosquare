@@ -17,3 +17,21 @@ describe ("length", function() {
     expect (length("helloworld")).to.equal(10);
   });
 });
+
+describe ("columns", function() {
+  it ("establish number of columns", function(){
+    expect (columns("hasthewholeworldgonecrazyamitheonlyonearoundherewhogivesashitabouttherulesmarkitzero")).to.equal(10);
+  });
+});
+
+describe ("array", function() {
+  it ("puts string into an array", function(){
+    expect (array("has")).to.eql(["h", "a", "s"]);
+  });
+});
+
+describe ("slice", function() {
+  it ("slices array into multiple arrays", function(){
+    expect (slice(["h", "a", "s"])).to.eql(["h", "a"]);
+  });
+});
